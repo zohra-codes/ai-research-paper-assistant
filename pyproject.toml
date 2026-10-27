@@ -1,0 +1,27 @@
+[project]
+name = "ai-researcher"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Zohra", email = "shaikhzohra832@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.4.5",
+    "langchain-core>=1.6.10",
+    "langchain-google-genai>=4.4.2",
+    "langgraph>=1.2.15",
+    "pypdf2>=3.0.1",
+    "python-dotenv>=1.2.4",
+    "reportlab>=5.0.1",
+    "requests>=2.34.2",
+    "streamlit>=1.66.0",
+]
+
+[project.scripts]
+ai-researcher = "ai_researcher.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
